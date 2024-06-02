@@ -88,7 +88,7 @@ app.use(
 const apiRouter = require("./routers/api/router");
 
 // Mount the API router under the "/api" endpoint
-app.use("/api", apiRouter);
+app.use("/", apiRouter);
 
 /* ************************************************************************* */
 

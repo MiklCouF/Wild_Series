@@ -5,8 +5,13 @@ const router = express.Router();
 /* ************************************************************************* */
 // Import And Use Routers Here
 /* ************************************************************************* */
+const sayWelcome = (req, res) => {
 
-// router.get("/", sayWelcome);
+    res.send("Welcome to Wild Series !");
+
+};
+
+router.get("/", sayWelcome);
 
 const itemsRouter = require("./items/router");
 
